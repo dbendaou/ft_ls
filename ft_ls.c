@@ -6,11 +6,12 @@
 /*   By: dbendaou <dbendaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/20 16:32:31 by dbendaou          #+#    #+#             */
-/*   Updated: 2016/01/20 18:14:26 by dbendaou         ###   ########.fr       */
+/*   Updated: 2016/03/16 14:11:24 by dbendaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include "ft_ls.h"
+# include <stdlib.h>
 
 int 	ft_ls(char *direct)
 {
@@ -21,13 +22,20 @@ int 	ft_ls(char *direct)
 	t_dlst			*tmp;
 	char 			*stmp;
 
+	if (direct == NULL)
+	{
+		return (-1);
+	}
 	stmp = ft_strjoin(direct, "/");
 	begin = (t_dlst *)malloc(sizeof(t_dlst));
 	begin->next = NULL;
 	begin->prev = NULL;
 	tmp = begin;
 	if (!(p_dir = opendir(direct)))
-		perror("");
+	{
+		perror("Erreur ");
+		return (-1);
+	}
 	while ((tmp->str = readdir(p_dir)))
 	{
 		tmp->next = (t_dlst *)malloc(sizeof(t_dlst));
@@ -55,10 +63,19 @@ int 	ft_ls(char *direct)
 
 		tmp = tmp->next;
 	}
+	free (tmp);
 	return (1);
-	
+
 }
+
+#include <stdio.h>
+
 int 	main(int ac, char **av)
 {
+	if (ac == 1)
+	{
+		ft_ls(".");
+		return (-1);
+	}
 	ft_ls(av[1]);
 }
