@@ -1,36 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ls.h                                            :+:      :+:    :+:   */
+/*   error.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dbendaou <dbendaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/01/20 16:51:56 by dbendaou          #+#    #+#             */
-/*   Updated: 2016/01/20 18:14:28 by dbendaou         ###   ########.fr       */
+/*   Created: 2016/03/15 18:42:53 by dbendaou          #+#    #+#             */
+/*   Updated: 2016/03/30 16:48:00 by dbendaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef		FT_LS_H
-# define	FT_LS_H
+#include "ft_ls.h"
 
-# include <sys/types.h>
-# include <sys/stat.h>
-# include <dirent.h>
-# include <unistd.h>
-# include <pwd.h>
-# include <grp.h>
-# include <errno.h>
-# include "../Libft-42/libft.h"
-# include <stdio.h>
-
-typedef struct 		s_dlst
+void	arg_error(char arg)
 {
-	struct dirent	*str;
-	struct s_dlst	*next;
-	struct s_dlst	*prev;
-}					t_dlst;
+	ft_putstr_fd("ft_ls: illegal option -- ", 2);
+	ft_putchar_fd(arg, 2);
+	ft_putchar_fd('\n', 2);
+	ft_putendl_fd("usage = ft_ls [-Ralrt] [file ...]", 2);
+}
 
-int		ft_ls(char *direct);
+void	else_error(char *path)
+{
+	ft_putstr_fd("ft_ls: ", 2);
+	perror(path);
+}
 
-
-#endif
+void	stat_error(char *path, t_file *tmp)
+{
+	ft_putstr_fd("ft_ls: ", 2);
+	perror(path);
+	tmp->error = 1;
+}
