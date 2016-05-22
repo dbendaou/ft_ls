@@ -6,7 +6,7 @@
 #    By: dbendaou <dbendaou@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/05/10 16:16:05 by dbendaou          #+#    #+#              #
-#    Updated: 2016/05/22 19:04:28 by dbendaou         ###   ########.fr        #
+#    Updated: 2016/05/22 19:23:55 by dbendaou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ SRC_NAME	= 	append.c \
 				free.c \
 				ft_ls.c \
 				get_devsize.c \
-				get_max \
+				get_max.c \
 				get_pn.c \
 				list.c \
 				lprint.c \

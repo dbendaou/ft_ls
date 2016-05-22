@@ -6,7 +6,7 @@
 /*   By: dbendaou <dbendaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/22 18:30:51 by dbendaou          #+#    #+#             */
-/*   Updated: 2016/05/22 18:38:34 by dbendaou         ###   ########.fr       */
+/*   Updated: 2016/05/22 19:25:06 by dbendaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void		print_name(t_file *to_print)
 
 	if (S_ISLNK(to_print->f_mode))
 	{
-		bzero(buf, 1024);
+		ft_bzero(buf, 1024);
 		readlink(to_print->f_path, buf, 1024);
 		ft_putstr(to_print->f_name);
 		ft_putstr(" -> ");
@@ -67,7 +67,7 @@ void		print_bonus(t_file *tmp)
 	int		ret;
 	acl_t	acl;
 
-	bzero(buf, 512);
+	ft_bzero(buf, 512);
 	ret = listxattr(tmp->f_path, buf, 512, XATTR_NOFOLLOW);
 	if (ret > 0)
 		ft_putchar('@');

@@ -6,7 +6,7 @@
 /*   By: dbendaou <dbendaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/22 18:35:39 by dbendaou          #+#    #+#             */
-/*   Updated: 2016/05/22 18:38:08 by dbendaou         ###   ########.fr       */
+/*   Updated: 2016/05/22 19:22:48 by dbendaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char	**get_nextls(t_file *current, int *cnt, t_params *params)
 			&& (ft_strcmp(name, ".") != 0) && is_print(dir, params)
 			&& dir->error != 1)
 		{
-			next_ls[i] = ft_strndup(dir->f_path, ft_strlen(dir->f_path));
+			next_ls[i] = ft_strsub(dir->f_path, 0, ft_strlen(dir->f_path));
 			i++;
 		}
 		dir = dir->next;

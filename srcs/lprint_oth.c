@@ -6,7 +6,7 @@
 /*   By: dbendaou <dbendaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/22 18:30:51 by dbendaou          #+#    #+#             */
-/*   Updated: 2016/05/22 18:38:40 by dbendaou         ###   ########.fr       */
+/*   Updated: 2016/05/22 20:07:31 by dbendaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -117,7 +117,7 @@ void		date_printer(t_file *to_print)
 {
 	char	date[25];
 
-	bzero(date, 25);
+	ft_bzero(date, 25);
 	ft_strcpy(date, ctime(&to_print->f_time.tv_sec));
 	if (time(NULL) - (to_print->f_time.tv_sec) > 15778800
 		|| time(NULL) < to_print->f_time.tv_sec)

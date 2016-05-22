@@ -6,7 +6,7 @@
 /*   By: dbendaou <dbendaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/30 17:27:14 by dbendaou          #+#    #+#             */
-/*   Updated: 2016/05/22 18:32:15 by dbendaou         ###   ########.fr       */
+/*   Updated: 2016/05/22 19:20:10 by dbendaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int		readstat(char *path, t_file *file, t_params *params)
 	(path[ft_strlen(path) - 1] == '/' && ft_strlen(path) > 1) ?
 		ft_strncpy(file->f_path, path, ft_strlen(path) - 1)
 		: ft_strcpy(file->f_path, path);
-	bzero(file->f_name, 1024);
+	ft_bzero(file->f_name, 1024);
 	file->f_mode = buf.st_mode;
 	file->f_nlink = buf.st_nlink;
 	file->f_uid = buf.st_uid;

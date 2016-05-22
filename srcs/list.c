@@ -6,7 +6,7 @@
 /*   By: dbendaou <dbendaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/22 18:30:51 by dbendaou          #+#    #+#             */
-/*   Updated: 2016/05/22 18:38:32 by dbendaou         ###   ########.fr       */
+/*   Updated: 2016/05/22 19:24:41 by dbendaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int		dir_list(t_file **current, t_params *params)
 
 	tmp = *current;
 	begin = (t_file *)malloc(sizeof(t_file));
-	bzero(begin->f_path, 1024);
+	ft_bzero(begin->f_path, 1024);
 	begin->next = NULL;
 	if ((dir = opendir(tmp->f_path)) == NULL)
 	{
@@ -57,7 +57,7 @@ t_file	*get_file(int ac, char **av, t_params *params)
 
 	i = 0;
 	begin = (t_file *)malloc(sizeof(t_file));
-	bzero(begin->f_path, 1024);
+	ft_bzero(begin->f_path, 1024);
 	begin->next = NULL;
 	if (ft_strstr(av[0], "ft_ls"))
 		i++;
