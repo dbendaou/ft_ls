@@ -119,6 +119,7 @@ int					is_next(t_file *current);
 */
 int					ft_ls(int ac, char **av, t_params *params);
 char				**get_nextls(t_file *current, int *cnt, t_params *params);
+
 /*
 ** free.c
 */
