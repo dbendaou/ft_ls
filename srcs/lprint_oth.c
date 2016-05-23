@@ -6,7 +6,7 @@
 /*   By: dbendaou <dbendaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/22 18:37:21 by dbendaou          #+#    #+#             */
-/*   Updated: 2016/05/23 17:08:48 by dbendaou         ###   ########.fr       */
+/*   Updated: 2016/05/23 17:45:50 by dbendaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -128,5 +128,5 @@ void		date_printer(t_file *to_print)
 	}
 	else
 		ft_putnstr(4, 16, date);
-	ft_putstr("  ");
+	ft_putstr(" ");
 }
