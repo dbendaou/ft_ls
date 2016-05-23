@@ -6,7 +6,7 @@
 /*   By: dbendaou <dbendaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/25 14:48:05 by dbendaou          #+#    #+#             */
-/*   Updated: 2016/03/30 16:47:27 by dbendaou         ###   ########.fr       */
+/*   Updated: 2016/05/23 16:58:48 by dbendaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static unsigned int		arg_reader(char *args, t_params *tmp)
 
 	i = 0;
 	i_ar = 0;
-	while (args[i])//) && args [i] != (--))
+	while (args[i])
 	{
 		if (args[i] == 'l')
 			i_ar = i_ar | OPT_L;
@@ -50,11 +50,6 @@ t_params				*get_params(int size, char **av)
 	tmp->prms = 0;
 	tmp->count = 0;
 	i = 1;
-	if (av[0] == NULL)
-	{
-		free(tmp);
-		return (NULL);
-	}
 	while (i < size)
 	{
 		if (ft_strcmp(av[i], "--") == 0)
