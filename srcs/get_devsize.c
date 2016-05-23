@@ -6,14 +6,14 @@
 /*   By: dbendaou <dbendaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/22 18:30:51 by dbendaou          #+#    #+#             */
-/*   Updated: 2016/05/22 18:38:26 by dbendaou         ###   ########.fr       */
+/*   Updated: 2016/05/23 15:50:05 by dbendaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_ls.h"
 
 /*
-** MAX_MIN : obtient la len du champs minor si blk ou socket
+** MAX_MIN : obtient la taille du champs minor si block ou socket
 */
 
 int		max_min(t_file *to_print, t_params *params)
@@ -37,7 +37,7 @@ int		max_min(t_file *to_print, t_params *params)
 }
 
 /*
-** MAX_MAJ : idem ac major
+** MAX_MAJ : idem avec major
 */
 
 int		max_maj(t_file *to_print, t_params *params)

@@ -6,14 +6,14 @@
 /*   By: dbendaou <dbendaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/22 18:30:51 by dbendaou          #+#    #+#             */
-/*   Updated: 2016/05/22 19:24:41 by dbendaou         ###   ########.fr       */
+/*   Updated: 2016/05/23 15:53:07 by dbendaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_ls.h"
 
 /*
-** DIR_LIST : Lecture des elements du dossier pour la liste
+** DIR_LIST : Lecture des éléments du dossier pour la liste
 */
 
 int		dir_list(t_file **current, t_params *params)
@@ -47,7 +47,7 @@ int		dir_list(t_file **current, t_params *params)
 
 /*
 ** GET_FILE : Creation du premier maillon de
-**	la chaine et lecture des arguments envoyes
+**	la chaine et lecture des arguments envoyés
 */
 
 t_file	*get_file(int ac, char **av, t_params *params)
@@ -135,11 +135,11 @@ void	get_l(char *path, t_file **begin, struct dirent *buf, t_params *pr)
 	else if (buf == NULL)
 		first_append(path, begin, pr);
 	else
-		c_app(path, begin, pr);
+		classic_append(path, begin, pr);
 }
 
 /*
-** OPEN_CURRENT : ouvertrre du dssier courant si aucun f path specifie
+** OPEN_CURRENT : ouverture du dossier courant si aucun path specifié
 */
 
 t_file	*open_current(t_params *params, t_file **begin)

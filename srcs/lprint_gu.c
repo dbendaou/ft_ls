@@ -6,14 +6,14 @@
 /*   By: dbendaou <dbendaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/22 18:30:51 by dbendaou          #+#    #+#             */
-/*   Updated: 2016/05/22 18:38:38 by dbendaou         ###   ########.fr       */
+/*   Updated: 2016/05/23 15:54:44 by dbendaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_ls.h"
 
 /*
-** PRINT_NBUID : affiche luid si user inconnu
+** PRINT_NBUID : affiche l'uid si user inconnu
 */
 
 void		print_nbuid(t_file *to_print, int max)

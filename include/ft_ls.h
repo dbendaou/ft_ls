@@ -6,7 +6,7 @@
 /*   By: dbendaou <dbendaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/22 18:30:51 by dbendaou          #+#    #+#             */
-/*   Updated: 2016/05/22 18:38:18 by dbendaou         ###   ########.fr       */
+/*   Updated: 2016/05/23 15:41:59 by dbendaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,7 +102,7 @@ typedef struct		s_max
 ** append.c
 */
 int					readstat(char *path, t_file *file, t_params *params);
-void				c_app(char *p, t_file **be, t_params *pr);
+void				classic_append(char *p, t_file **be, t_params *pr);
 void				first_append(char *path, t_file **begin, t_params *params);
 
 /*

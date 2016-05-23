@@ -6,7 +6,7 @@
 /*   By: dbendaou <dbendaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/22 18:30:51 by dbendaou          #+#    #+#             */
-/*   Updated: 2016/05/22 18:38:28 by dbendaou         ###   ########.fr       */
+/*   Updated: 2016/05/23 15:51:13 by dbendaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ static int		max_link(t_file *to_print, t_params *params)
 }
 
 /*
-**MAX_USR : obtient la len max du champs usr
+** MAX_USR : obtient la len max du champs user
 */
 
 static int		max_usr(t_file *to_print, t_params *params)
@@ -64,7 +64,7 @@ static int		max_usr(t_file *to_print, t_params *params)
 }
 
 /*
-** MAX_GRP : obtient la len max du chmps grp
+** MAX_GRP : obtient la len max du chmps groupe
 */
 
 static int		max_grp(t_file *to_print, t_params *params)
@@ -95,7 +95,7 @@ static int		max_grp(t_file *to_print, t_params *params)
 }
 
 /*
-** MAX_SIZE : obrient la len max du champs size
+** MAX_SIZE : obtient la len max du champs size
 */
 
 static int		max_size(t_file *to_print, t_params *params)
@@ -115,7 +115,7 @@ static int		max_size(t_file *to_print, t_params *params)
 }
 
 /*
-**GET_MAX : creation de la struct des size max des differents infos
+**GET_MAX : création de la structure des size max des differents infos
 */
 
 t_max			*get_max(t_file *to_print, t_params *params)

@@ -6,14 +6,14 @@
 /*   By: dbendaou <dbendaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/22 18:30:51 by dbendaou          #+#    #+#             */
-/*   Updated: 2016/05/22 19:25:06 by dbendaou         ###   ########.fr       */
+/*   Updated: 2016/05/23 15:54:21 by dbendaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_ls.h"
 
 /*
-** PRINT_NAME : affiche le nm du file en cours
+** PRINT_NAME : affiche le nom du fichier en cours
 */
 
 void		print_name(t_file *to_print)
@@ -33,7 +33,7 @@ void		print_name(t_file *to_print)
 }
 
 /*
-** PRINT_DNAME : affichage du nom du dossier si > 1
+** PRINT_DNAME : affiche le nom du dossier si > 1
 */
 
 void		print_dname(t_file *to_print, t_params *params)
@@ -46,7 +46,7 @@ void		print_dname(t_file *to_print, t_params *params)
 }
 
 /*
-** LINE_PRINTER : affichage dune ligne avec -l
+** LINE_PRINTER : affichage d'une ligne avec -l
 */
 
 void		line_printer(t_file *tmp, t_max *max)
@@ -81,7 +81,7 @@ void		print_bonus(t_file *tmp)
 }
 
 /*
-** LPRINT : gestion de l'affiche avec -l
+** LPRINT : gestion de l'affichage avec -l
 */
 
 void		lprint(t_file *to_print, t_params *params)

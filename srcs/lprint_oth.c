@@ -6,7 +6,7 @@
 /*   By: dbendaou <dbendaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/22 18:30:51 by dbendaou          #+#    #+#             */
-/*   Updated: 2016/05/22 20:07:31 by dbendaou         ###   ########.fr       */
+/*   Updated: 2016/05/23 15:55:41 by dbendaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ void		total_print(t_file *to_print, t_params *params)
 }
 
 /*
-** PRINT_NBLK : affiche le nb de links
+** PRINT_NBLK : affiche le nombre de links
 */
 
 void		print_nblk(t_file *to_print, int max)
@@ -110,7 +110,7 @@ void		print_size(t_file *to_print, t_max *max)
 }
 
 /*
-** DATE_PRINTER : tout est dans le nom
+** DATE_PRINTER : Affiche la date des fichiers
 */
 
 void		date_printer(t_file *to_print)

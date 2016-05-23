@@ -6,7 +6,7 @@
 /*   By: dbendaou <dbendaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/22 18:30:51 by dbendaou          #+#    #+#             */
-/*   Updated: 2016/05/22 18:38:46 by dbendaou         ###   ########.fr       */
+/*   Updated: 2016/05/23 15:57:15 by dbendaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,7 @@ void	simple_print(t_file *begin, t_params *params)
 }
 
 /*
-** PRINTER : Selection de laffichage en fonction des parametres
+** PRINTER : Selection de l'affichage en fonction des parametres
 */
 
 void	printer(t_file *begin, t_params *params)

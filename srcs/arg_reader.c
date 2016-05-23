@@ -6,11 +6,15 @@
 /*   By: dbendaou <dbendaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/25 14:48:05 by dbendaou          #+#    #+#             */
-/*   Updated: 2016/03/30 16:47:27 by dbendaou         ###   ########.fr       */
+/*   Updated: 2016/05/23 16:48:48 by dbendaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_ls.h"
+
+/*
+** Verifie si des options sont activées
+*/
 
 static unsigned int		arg_reader(char *args, t_params *tmp)
 {
@@ -19,7 +23,7 @@ static unsigned int		arg_reader(char *args, t_params *tmp)
 
 	i = 0;
 	i_ar = 0;
-	while (args[i])//) && args [i] != (--))
+	while (args[i])
 	{
 		if (args[i] == 'l')
 			i_ar = i_ar | OPT_L;
@@ -74,3 +78,4 @@ t_params				*get_params(int size, char **av)
 	}
 	return (tmp);
 }
+

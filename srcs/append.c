@@ -6,14 +6,14 @@
 /*   By: dbendaou <dbendaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/30 17:27:14 by dbendaou          #+#    #+#             */
-/*   Updated: 2016/05/22 19:20:10 by dbendaou         ###   ########.fr       */
+/*   Updated: 2016/05/23 15:45:13 by dbendaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_ls.h"
 
 /*
-** READSTAT : Recuperation des stats d'un fichier
+** READSTAT : Récupération des stats d'un fichier
 */
 
 int		readstat(char *path, t_file *file, t_params *params)
@@ -45,10 +45,10 @@ int		readstat(char *path, t_file *file, t_params *params)
 }
 
 /*
-** CLASSIC_APPEND : Ajout d'un fichier a la liste selon l'ordre lexico
+** CLASSIC_APPEND : Ajout d'un fichier à la liste selon l'ordre alphabétique
 */
 
-void	c_app(char *path, t_file **begin, t_params *params)
+void	classic_append(char *path, t_file **begin, t_params *params)
 {
 	t_file	*tmp;
 	t_file	*new;
@@ -73,8 +73,8 @@ void	c_app(char *path, t_file **begin, t_params *params)
 }
 
 /*
-** FIRST_APPEND : Ajout d'un fichier a la liste au premier appel de la fonction,
-** ordonne fichiers/dossiers puis lexico
+** FIRST_APPEND : Ajout d'un fichier à la liste au premier appel de la fonction,
+** puis ordonne les fichiers/dossiers
 */
 
 void	first_append(char *path, t_file **begin, t_params *params)
