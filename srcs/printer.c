@@ -13,7 +13,7 @@
 #include "ft_ls.h"
 
 /*
-** IS_PRINT : est il affichable
+** IS_PRINT : est-il affichable
 */
 
 int		is_print(t_file *tmp, t_params *params)
@@ -80,7 +80,7 @@ void	simple_print(t_file *begin, t_params *params)
 }
 
 /*
-** PRINTER : Selection de laffichage en fonction des parametres
+** PRINTER : Selection de l'affichage en fonction des parametres
 */
 
 void	printer(t_file *begin, t_params *params)

@@ -6,7 +6,7 @@
 /*   By: dbendaou <dbendaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/30 12:25:21 by dbendaou          #+#    #+#             */
-/*   Updated: 2016/05/23 17:07:35 by dbendaou         ###   ########.fr       */
+/*   Updated: 2016/05/23 18:48:05 by dbendaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,9 @@ int		is_next(t_file *current)
 	while (tmp)
 	{
 		if (tmp->next)
+		{
 			return (1);
+		}
 		tmp = tmp->next;
 	}
 	return (0);

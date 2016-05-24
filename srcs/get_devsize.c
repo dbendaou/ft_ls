@@ -37,7 +37,7 @@ int		max_min(t_file *to_print, t_params *params)
 }
 
 /*
-** MAX_MAJ : idem ac major
+** MAX_MAJ : idem avec major
 */
 
 int		max_maj(t_file *to_print, t_params *params)

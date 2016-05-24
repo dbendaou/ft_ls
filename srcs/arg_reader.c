@@ -6,7 +6,7 @@
 /*   By: dbendaou <dbendaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/25 14:48:05 by dbendaou          #+#    #+#             */
-/*   Updated: 2016/05/23 16:58:48 by dbendaou         ###   ########.fr       */
+/*   Updated: 2016/05/23 17:50:43 by dbendaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,6 @@ t_params				*get_params(int size, char **av)
 		if (IS_LEG(tmp->prms))
 		{
 			arg_error(tmp->arg);
-			free(tmp);
 			return (NULL);
 		}
 		i++;

@@ -13,7 +13,7 @@
 #include "ft_ls.h"
 
 /*
-** LIST_FREE : libere la liste
+** LIST_FREE : libère la liste
 */
 
 void		list_free(t_file **begin)

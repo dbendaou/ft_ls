@@ -45,7 +45,7 @@ int		readstat(char *path, t_file *file, t_params *params)
 }
 
 /*
-** CLASSIC_APPEND : Ajout d'un fichier a la liste selon l'ordre lexico
+** CLASSIC_APPEND : Ajout d'un fichier à la liste selon l'ordre lexico
 */
 
 void	c_app(char *path, t_file **begin, t_params *params)
@@ -73,7 +73,7 @@ void	c_app(char *path, t_file **begin, t_params *params)
 }
 
 /*
-** FIRST_APPEND : Ajout d'un fichier a la liste au premier appel de la fonction,
+** FIRST_APPEND : Ajout d'un fichier à la liste au premier appel de la fonction,
 ** ordonne fichiers/dossiers puis lexico
 */
 

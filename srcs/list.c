@@ -6,14 +6,14 @@
 /*   By: dbendaou <dbendaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/22 18:30:18 by dbendaou          #+#    #+#             */
-/*   Updated: 2016/05/23 17:08:30 by dbendaou         ###   ########.fr       */
+/*   Updated: 2016/05/24 16:34:59 by dbendaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_ls.h"
 
 /*
-** DIR_LIST : Lecture des elements du dossier pour la liste
+** DIR_LIST : Lecture des éléments du dossier pour la liste
 */
 
 int		dir_list(t_file **current, t_params *params)
@@ -46,8 +46,8 @@ int		dir_list(t_file **current, t_params *params)
 }
 
 /*
-** GET_FILE : Creation du premier maillon de
-**	la chaine et lecture des arguments envoyes
+** GET_FILE : Création du premier maillon de
+**	la chaine et lecture des arguments envoyés
 */
 
 t_file	*get_file(int ac, char **av, t_params *params)
@@ -109,7 +109,7 @@ int		open_ifdir(t_file **begin, t_params *params)
 
 /*
 ** GET_LIST : Pour chaque argument path, on lit les stats
-**	et rajoute un maillon a la liste
+**	et rajoute un maillon à la liste
 **	Si buf est nul = premier appel, ensuite buf non nul
 **	et f_name rempli pour printer
 */
@@ -139,7 +139,7 @@ void	get_l(char *path, t_file **begin, struct dirent *buf, t_params *pr)
 }
 
 /*
-** OPEN_CURRENT : ouvertrre du dssier courant si aucun f path specifie
+** OPEN_CURRENT : ouverture du dossier courant si aucun path n'est specifié
 */
 
 t_file	*open_current(t_params *params, t_file **begin)

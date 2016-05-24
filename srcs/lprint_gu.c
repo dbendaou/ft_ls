@@ -13,7 +13,7 @@
 #include "ft_ls.h"
 
 /*
-** PRINT_NBUID : affiche luid si user inconnu
+** PRINT_NBUID : affiche l'uid si user inconnu
 */
 
 void		print_nbuid(t_file *to_print, int max)

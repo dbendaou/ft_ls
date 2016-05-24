@@ -6,14 +6,14 @@
 /*   By: dbendaou <dbendaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/22 18:30:21 by dbendaou          #+#    #+#             */
-/*   Updated: 2016/05/23 17:08:17 by dbendaou         ###   ########.fr       */
+/*   Updated: 2016/05/23 18:47:40 by dbendaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_ls.h"
 
 /*
-** MAX_LINK : obtenir la taille max du nombre de links
+** MAX_LINK : obtiens le nombres maximum de ln-s
 */
 
 static int		max_link(t_file *to_print, t_params *params)
@@ -33,7 +33,7 @@ static int		max_link(t_file *to_print, t_params *params)
 }
 
 /*
-**MAX_USR : obtient la len max du champs usr
+**MAX_USR : obtient la len max du champs user
 */
 
 static int		max_usr(t_file *to_print, t_params *params)
@@ -115,7 +115,7 @@ static int		max_size(t_file *to_print, t_params *params)
 }
 
 /*
-**GET_MAX : creation de la struct des size max des differents infos
+** GET_MAX : création de la struct des size max des differents infos
 */
 
 t_max			*get_max(t_file *to_print, t_params *params)

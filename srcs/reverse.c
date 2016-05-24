@@ -13,7 +13,7 @@
 #include "ft_ls.h"
 
 /*
-** REVERSE : inverse une liste simplement chainee
+** REVERSE : inverse une liste simplement chainée
 */
 
 t_file	*reverse(t_file *ptr)
@@ -79,7 +79,7 @@ void	first_reverse(t_file **to_rev)
 }
 
 /*
-** REVERSE_LIST : inverse l'ordre des listes imbriquees
+** REVERSE_LIST : inverse l'ordre des listes imbriquées
 */
 
 void	reverse_list(t_file **to_rev)

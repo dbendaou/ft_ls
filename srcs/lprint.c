@@ -6,14 +6,14 @@
 /*   By: dbendaou <dbendaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/22 18:31:19 by dbendaou          #+#    #+#             */
-/*   Updated: 2016/05/23 17:08:37 by dbendaou         ###   ########.fr       */
+/*   Updated: 2016/05/24 16:35:20 by dbendaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_ls.h"
 
 /*
-** PRINT_NAME : affiche le nm du file en cours
+** PRINT_NAME : affiche le nom du fichier en cours
 */
 
 void		print_name(t_file *to_print)
@@ -46,7 +46,7 @@ void		print_dname(t_file *to_print, t_params *params)
 }
 
 /*
-** LINE_PRINTER : affichage dune ligne avec -l
+** LINE_PRINTER : affichage d'une ligne avec -l
 */
 
 void		line_printer(t_file *tmp, t_max *max)
